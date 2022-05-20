@@ -1,0 +1,48 @@
+/*
+Theme Name: My theme
+Theme URI: https://wordpress.org/
+Author: Tran Quoc Huy
+Author URI: https://wordpress.org/
+Description: My first basic theme
+Tags: theme, basic theme
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+Text Domain: mytheme
+*/
+
+/* Styles for wrapping the search box */
+s
+.woocommerce ul.products li.product a img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: none;
+}
+
+ul.products.columns-4 {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+bdi {
+    color: red;
+}
+.woocommerce ul.products li.product .price {
+    text-decoration: none;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+    font-size: .857em;
+}
+h2.woocommerce-loop-product__title {
+    margin: 0;
+    font-size: 1em;
+}
+
+.woocommerce span.onsale {
+ 
+    background-color: rgba(255, 72, 0, 0.879);
+  
+}

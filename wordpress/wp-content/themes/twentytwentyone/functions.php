@@ -640,3 +640,68 @@ function twentytwentyone_add_ie_class() {
 	<?php
 }
 add_action( 'wp_footer', 'twentytwentyone_add_ie_class' );
+
+
+// add_action( 'wp_dashboard_setup', 'wpshare247_remove_all_dashboard' ); 
+// function wpshare247_remove_all_dashboard(){
+//     global $wp_meta_boxes; 
+                
+//     //Xóa gutenberg dashboard widget
+//     remove_action( 'try_gutenberg_panel', 'wp_try_gutenberg_panel' );
+    
+//     //Xóa dashboard widget trái
+//     $arr_left_dashboard = $wp_meta_boxes['dashboard']['normal'];
+//     if($arr_left_dashboard){
+//         foreach($arr_left_dashboard as $key => $arr_core_or_high){
+//             if($arr_core_or_high){
+//                 foreach($arr_core_or_high as $item){
+//                     $dashboard_id = $item['id'];
+//                     remove_meta_box( $dashboard_id, 'dashboard', 'normal' );
+//                 }
+//             }
+//         }
+//     }
+    
+//     //Xóa dashboard widget phải
+//     $arr_right_dashboard = $wp_meta_boxes['dashboard']['side']['core'];
+//     if($arr_right_dashboard){
+//         foreach($arr_right_dashboard as $item){
+//             $dashboard_id = $item['id'];
+//             remove_meta_box( $dashboard_id, 'dashboard', 'side' );
+//         }
+//     }
+// }
+
+add_action('wp_dashboard_setup', 'wpshare247_add_dashboard_widgets', 9999 );
+function wpshare247_add_dashboard_widgets(){
+    $widget_id = 'wpshare247-dashboard-widget-id';
+    $widget_name = 'Thông tin tài khoản đăng nhập 	- Wpshare247';
+    $callback = 'wpshare247_add_new_dashboard_widget_content';
+    $control_callback = '';
+    $callback_args = NULL;
+    wp_add_dashboard_widget( $widget_id, $widget_name, $callback, $control_callback, $callback_args );
+}
+function wpshare247_add_new_dashboard_widget_content($my_var, $callback_args){
+    $widget_id = $callback_args['id'] . '_content';
+    $current_user = wp_get_current_user();
+    ?>
+    <section id="<?php echo $widget_id; ?>" class="wpshare247_content_dashboard">
+        <div class="section-body rss-widget">
+            <!-- Bạn có thể hiển thị nội dung ở đây -->
+            <ul>
+                <li><strong>ID:</strong> <?php echo $current_user->ID;?></li>
+                <li><strong>Username:</strong> <?php echo $current_user->user_nicename;?></li>
+                <li><strong>Email:</strong> <?php echo $current_user->user_email;?></li>
+                <li><a href="<?php echo wp_logout_url(); ?>">Thoát</a></li>
+            </ul>
+        </div>
+    </section>
+    <?php
+}
+//Removing &amp; or any html special enitiy from name
+// function filter_post_name( $data, $postarr, $unsanitized_postarr){
+//     $data['post_title'] = html_entity_decode($data['post_title']);
+//     return $data;
+// }
+ 
+// add_filter( 'wp_insert_post_data', 'filter_post_name',10,3);

@@ -20,7 +20,7 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'cmsproject' );
+define( 'DB_NAME', 'wordpress' );
 
 /** Database username */
 define( 'DB_USER', 'root' );
@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         '[V$_`JGS4Aed04?--iZ]|kNIiq{PJ{fheW;-Hj[J RYAk(0hOdQ0OhCmpgg3[Jx}' );
-define( 'SECURE_AUTH_KEY',  'FP(}0q(E/AP7Sl>JK#e5WGzG *A9e[W>^Gy1{O,>_{)rfcqO9)F}Dvrbj?V[!hk;' );
-define( 'LOGGED_IN_KEY',    'F!NfFo?r[a^-,CnU#r:jqK=+iUfMfW9XlYYyD9<Jb&Rwk(`TNf{a3;J-t&y*AQ<y' );
-define( 'NONCE_KEY',        'S :l1T2XM,y]qd ZeNf}M.PC1D7fxyg4;u<}l4i1Lof``*=2`Tt<5CRcsWviC%dP' );
-define( 'AUTH_SALT',        'N_FQ:?rHp(38;)/2s9?@+]%#i6.XKo_um#c[vi0+2$2%o^b*NU]k *ErE.f?s|p-' );
-define( 'SECURE_AUTH_SALT', 'I7@<[6l;=^ulzaW)iKIwR<}QBQ]Tq<.#k,j$o.Iv8Ns!^EpvpsG#V}7-nHm])9{0' );
-define( 'LOGGED_IN_SALT',   'W~0bV/$Ifl2yz4uCLJ:nJSO#ki3^MkGNCE^U_tqk%=9C^jm_7x3jTCP)%AS_9liN' );
-define( 'NONCE_SALT',       'y,v/I|BrZD| (auYR?k&{*^ar9eu%L]H0vL@Wf7Xz!K/J>v^m*hfF&BACOa]BAKZ' );
+define( 'AUTH_KEY',         'b}rSel,Hn^i,HG{G/xGmkc>LK-fQMRU>}w;A&:8|OliE:>ml(n)#`Dg3WJs@XVyU' );
+define( 'SECURE_AUTH_KEY',  'g.q%DsbA=MIT1IGp{K^DqI~vQs-QHGJ ;n0gs+VsPar[{a?r,F;C)9#TGEW+(5&~' );
+define( 'LOGGED_IN_KEY',    'lMnpgAkZBiW(&c_O=f#hQp%65_gG]17J<6n0*T)/Mx)<Q[[GQH/P+,?-o[xP`vg(' );
+define( 'NONCE_KEY',        'M[ ^+]lqq#wde:Nil6}rn4*x^^9F;me<N6)P#3rK7PcZuTzzPNE}I6tj,)F[ltQn' );
+define( 'AUTH_SALT',        'a1u#PJ]1(,dLhG7mZk0$uxMzGwd0#.l}kd)gt:5 /ANo$SC>umt@L;?6GHoMa]ST' );
+define( 'SECURE_AUTH_SALT', '28[;`|fMM&4M|?kg50QUGx4GA1[P*V#{]VlK},&E?v}dnos>B}&A=~eO~d5f|@H]' );
+define( 'LOGGED_IN_SALT',   'Fy?N[oWr%?6rM*bN:.0(nCn[;Z,TxW1/*lcC~{a4}.0G{DwA2~9g/Icy:QK8:rsK' );
+define( 'NONCE_SALT',       'lmV^h$}S(s6v?A w3uWVD<^H(9z=Ud*=sYg ]=y?+s!{C<8)LEv5]}4J4Ea!Vcoq' );
 
 /**#@-*/
 
@@ -94,4 +94,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
-
