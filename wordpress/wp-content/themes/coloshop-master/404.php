@@ -7,7 +7,7 @@
 <head>
 <head>
     <meta charset="utf-8" />
-    <title>Trang 404 - Blog Lại Văn Đức</title>
+    <title> Trang 404 </title>
     <meta name="author" content="Laivanduc" />
     <meta name="keywords" content="keywords của bạn" />
     <meta name="description" content="description của bạn" />
@@ -225,7 +225,7 @@ body{
             <hr>
             <div class='_1'>THE PAGE</div>
             <div class='_2'>WAS NOT FOUND</div>
-            <a class='btn' href='https://laivanduc.vn/'>Home Page</a>
+            <a class='btn' href='http://localhost/wordpress'>Home Page</a>
         </div>
 </body>
 </html>

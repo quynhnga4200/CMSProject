@@ -209,6 +209,7 @@
 										<div class="product_info">
 											<h6 class="product_name"><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h6>
 											<div class="product_price"><?php echo $product->get_price_html(); ?></div>
+											
 										</div>
 									</div>
 								</div>

@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory') ?>/plugins/OwlCarousel2-2.2.1/animate.css">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory') ?>/styles/main_styles.css">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory') ?>/styles/responsive.css">
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory') ?>/styles/categories_styles.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory') ?>/styles/categories_styles.css">
 </head>
 
 
@@ -39,20 +39,22 @@
 
 
 								<!-- Lấy menu trên thanh header -->
+
 								<?php wp_nav_menu(
 									array(
 										'theme_location' => 'header-main',
 										'container' => 'false',
 										'menu_id' => 'header-main',
-										'menu_class' => 'navbar_menu'
+										'menu_class' => 'footer_nav'
 									)
 								); ?>
+								</ul>
 
 								<ul class="navbar_user">
 									<li>
 
 										<?php get_product_search_form() ?>
-										
+
 									</li>
 									<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
 									<li class="checkout">

@@ -128,3 +128,41 @@ function percentSale($price , $price_sale){
     $percent = 100 - $sale;
     return number_format($percent);
 }
+
+
+// rating
+function show_rating( $rating_html, $rating, $count ) {
+    $rating_html  = '<div class="star-rating">';
+    $rating_html .= wc_get_star_rating_html( $rating, $count );
+    $rating_html .= '</div>';
+
+    return $rating_html;
+};  
+add_filter( 'woocommerce_product_get_rating_html', 'show_rating', 100, 3 );
+
+
+/**
+ * @param $template_name
+ * @return false|string|void|WP_Error
+ */
+function dk_page($template_name) {
+    $pages = get_posts([
+        'post_type' => 'page',
+        'post_status' => 'publish',
+        'meta_query' => [
+            [
+                'key' => '_wp_page_template',
+                'value' => '/'.$template_name.'.php',
+                'compare' => '='
+            ]
+        ]
+    ]);
+    if(!empty($pages))
+    {
+        foreach($pages as $pages__value)
+        {
+            return get_permalink($pages__value->ID);
+        }
+    }
+    return get_bloginfo('url');
+}

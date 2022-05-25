@@ -60,6 +60,9 @@
     </div>
 </footer>
 
+
+<?php var_dump(dk_page('shop').'/shop');?>
+
 </div>
 
 <script src="<?php bloginfo('stylesheet_directory') ?>/js/jquery-3.2.1.min.js"></script>
