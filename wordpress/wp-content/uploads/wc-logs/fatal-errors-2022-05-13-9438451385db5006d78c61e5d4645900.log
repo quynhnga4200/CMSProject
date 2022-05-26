@@ -1,0 +1,4 @@
+2022-05-13T02:32:11+00:00 CRITICAL Cannot redeclare get_category() (previously declared in C:\xampp\htdocs\wordpress\wp-includes\category.php:91) in C:\xampp\htdocs\wordpress\wp-content\themes\mytheme\functions.php on line 51
+
+2022-05-13T02:32:53+00:00 CRITICAL Cannot redeclare get_category() (previously declared in C:\xampp\htdocs\wordpress\wp-includes\category.php:91) in C:\xampp\htdocs\wordpress\wp-content\themes\mytheme\functions.php on line 51
+
