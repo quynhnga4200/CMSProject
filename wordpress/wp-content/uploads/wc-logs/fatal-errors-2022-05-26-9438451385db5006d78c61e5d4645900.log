@@ -1,0 +1,156 @@
+2022-05-26T15:11:16+00:00 CRITICAL Uncaught Error: Call to undefined function dk_page() in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\footer.php:64
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(770): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php(333): get_footer()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\footer.php on line 64
+
+2022-05-26T15:11:39+00:00 CRITICAL Uncaught Error: Call to undefined function dk_page() in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\footer.php:64
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(770): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php(333): get_footer()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\footer.php on line 64
+
+2022-05-26T15:12:26+00:00 CRITICAL Uncaught Error: Call to undefined function dk_page() in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\footer.php:64
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(770): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\archive-product.php(40): get_footer('shop')
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\footer.php on line 64
+
+2022-05-26T15:12:40+00:00 CRITICAL Uncaught Error: Call to undefined function dk_page() in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\footer.php:64
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(770): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\archive-product.php(40): get_footer('shop')
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\footer.php on line 64
+
+2022-05-26T15:12:44+00:00 CRITICAL Uncaught Error: Call to undefined function dk_page() in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\footer.php:64
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(770): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php(333): get_footer()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\footer.php on line 64
+
+2022-05-26T16:55:51+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php:24
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php on line 24
+
+2022-05-26T16:57:33+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php:14
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php on line 14
+
+2022-05-26T16:59:47+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php:16
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php on line 16
+
+2022-05-26T17:05:05+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php:16
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php on line 16
+
+2022-05-26T17:07:41+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php:16
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php on line 16
+
+2022-05-26T17:07:53+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php:16
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php on line 16
+
+2022-05-26T17:08:58+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php:16
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php on line 16
+
+2022-05-26T17:10:54+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php:28
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php on line 28
+
+2022-05-26T17:15:19+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php:28
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php on line 28
+
+2022-05-26T17:21:16+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php:26
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php on line 26
+
+2022-05-26T17:22:06+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php:26
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php on line 26
+
+2022-05-26T17:23:26+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php:16
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php on line 16
+

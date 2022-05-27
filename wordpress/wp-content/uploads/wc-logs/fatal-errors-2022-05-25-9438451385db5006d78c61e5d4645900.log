@@ -1,0 +1,31 @@
+2022-05-25T09:01:46+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php on line 86
+
+2022-05-25T09:04:15+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php on line 86
+
+2022-05-25T09:34:35+00:00 CRITICAL Uncaught Error: Call to undefined function registration_form() in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php:53
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php(71): custom_registration_function()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php on line 53
+
+2022-05-25T09:41:54+00:00 CRITICAL Uncaught Error: Call to undefined function registration_form() in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php:55
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php(74): custom_registration_function()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php on line 55
+
+2022-05-25T09:42:48+00:00 CRITICAL Uncaught Error: Call to undefined function registration_form() in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php:58
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php(11): custom_registration_function()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\coloshop-master\index.php on line 58
+

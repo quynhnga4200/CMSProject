@@ -12,3 +12,78 @@ Requires PHP: 7.0
 Text Domain: mytheme
 */
 
+/* Styles for wrapping the search box */
+s
+.woocommerce ul.products li.product a img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: none;
+}
+
+ul.products.columns-4 {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+bdi {
+    color: red;
+}
+.woocommerce ul.products li.product .price {
+    text-decoration: none;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+    font-size: .857em;
+}
+h2.woocommerce-loop-product__title {
+    margin: 0;
+    font-size: 1em;
+}
+
+.woocommerce span.onsale {
+ 
+    background-color: rgba(255, 72, 0, 0.879);
+  
+}
+
+#main {
+    position: relative;
+}
+.woocommerce .woocommerce-result-count {
+    position: absolute;
+    left: 10px;
+    top: 100px;
+}
+
+.woocommerce .woocommerce-ordering {
+
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    border: 2px solid orange;
+    background-color: orange;
+}
+
+ul.products.columns-4 {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 80px;
+}
+
+body.archive.post-type-archive.post-type-archive-product.logged-in.admin-bar.theme-coloshop-master.woocommerce-shop.woocommerce.woocommerce-page.woocommerce-js.customize-support {
+    margin-top: 50px;
+}
+
+h1.product_title.entry-title {
+    font-size: 41px;
+}
+.summary.entry-summary {
+    margin-top: 150px;
+}
+ul.products.columns-4 {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 200px;
+}
+

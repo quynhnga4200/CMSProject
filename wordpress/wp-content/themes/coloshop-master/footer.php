@@ -32,7 +32,7 @@
                             'theme_location' => 'header-bot',
                             'container' => 'false',
                             'menu_id' => 'header-bot',
-                            'menu_class' => 'footer_nav' // thay bằng class giống css
+                            'menu_class' => 'footer_nav' 
                         )
                     ); ?>
                 </div>
@@ -44,7 +44,7 @@
                             'theme_location' => 'header-bot-icon',
                             'container' => 'false',
                             'menu_id' => 'header-bot-icon',
-                            'menu_class' => 'header-bot-icon' // thay bằng class giống css
+                            'menu_class' => 'header-bot-icon' 
                         )
                     ); ?>
                 </div>
@@ -59,6 +59,7 @@
         </div>
     </div>
 </footer>
+
 
 </div>
 

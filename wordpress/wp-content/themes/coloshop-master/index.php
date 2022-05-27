@@ -8,27 +8,25 @@
 <div class="banner">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
-				<div class="banner_item align-items-center" style="background-image:url(<?php bloginfo('stylesheet_directory') ?>/images/banner_1.jpg)">
-					<div class="banner_category">
-						<a href="categories.html">women's</a>
+
+			<?php $args = array(
+				'hide_empty' => 0,
+				'taxonomy' => 'product_cat',
+				'orderby' => 'id',
+				'parent' => 0
+			);
+			$cates = get_categories($args);
+			foreach ($cates as $cate) {  ?>
+
+				<div class="col-md-3">
+					<div class="banner_item align-items-center" style="background: linear-gradient(to right, crimson, lightsalmon, gold, 
+  seagreen, midnightblue, indigo, violet);">
+						<div class="banner_category">
+							<a href="<?php echo get_term_link($cate->slug, 'product_cat'); ?>"><?php echo $cate->name; ?></a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="banner_item align-items-center" style="background-image:url(<?php bloginfo('stylesheet_directory') ?>/images/banner_2.jpg)">
-					<div class="banner_category">
-						<a href="categories.html">accessories's</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="banner_item align-items-center" style="background-image:url(<?php bloginfo('stylesheet_directory') ?>/images/banner_3.jpg)">
-					<div class="banner_category">
-						<a href="categories.html">men's</a>
-					</div>
-				</div>
-			</div>
+			<?php } ?>
 		</div>
 	</div>
 </div>
@@ -47,22 +45,10 @@
 		<div class="row align-items-center">
 			<div class="col text-center">
 				<div class="new_arrivals_sorting">
-					<?php
-					$args = array(
-						'type'      => 'post',
-						'child_of'  => 0,
-						'parent'    => ''
-					);
-					$categories = get_categories($args);
-					foreach ($categories as $category) { ?>
-						<?php echo $category->name; ?>
-					<?php } ?>
+
 
 					<ul class="arrivals_grid_sorting clearfix button-group filters-button-group">
 						<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center active is-checked" data-filter="*">all</li>
-						<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".women">women's</li>
-						<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".accessories">accessories</li>
-						<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".men">men's</li>
 					</ul>
 
 				</div>
@@ -73,7 +59,7 @@
 				<div class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
 
 					<!-- Product 1 -->
-					<!-- Hàm lấy 10 sản phẩm mới nhất -->
+					<!-- Lấy 10 sản phẩm mới nhất -->
 
 					<?php $args = array('post_type' => 'product', 'posts_per_page' => 10,); ?>
 					<?php $getposts = new WP_query($args); ?>
@@ -202,12 +188,15 @@
 										</a>
 										<!-- hiển thị % sale -->
 										<?php if ($product->is_on_sale()) { ?>
-											<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span><?php echo percentSale($product->get_regular_price(), $product->get_sale_price()) . ' %' ?></span></div>
+											<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
+												<span><?php echo percentSale($product->get_regular_price(), $product->get_sale_price()) . ' %' ?></span>
+											</div>
 										<?php } ?>
 
 										<div class="product_info">
 											<h6 class="product_name"><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h6>
 											<div class="product_price"><?php echo $product->get_price_html(); ?></div>
+
 										</div>
 									</div>
 								</div>

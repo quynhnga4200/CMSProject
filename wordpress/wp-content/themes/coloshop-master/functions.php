@@ -1,4 +1,25 @@
 <?php
+
+/**
+@ Chèn CSS và Javascript vào theme
+@ sử dụng hook wp_enqueue_scripts() để hiển thị nó ra ngoài front-end
+ **/
+function my_styles()
+{
+	/*
+    * Hàm get_stylesheet_uri() sẽ trả về giá trị dẫn đến file style.css của theme
+    * Nếu sử dụng child theme, thì file style.css này vẫn load ra từ theme mẹ
+    */
+	wp_register_style(
+		'main-style',
+		get_template_directory_uri() . '/style.css',
+		'all'
+	);
+	wp_enqueue_style('main-style');
+}
+add_action('wp_enqueue_scripts', 'my_styles');
+
+
 function my_custom_wc_theme_support(){
     add_theme_support('woocommerce');
     add_theme_support('wc-product-gallery-lightbox');
@@ -8,6 +29,7 @@ add_action('after_setup_theme' , 'my_custom_wc_theme_support');
 
 function initTheme()
 {
+    // Đăng kí menu
     register_nav_menus(
         array(
             'header-top' => 'Menu top',
@@ -25,32 +47,7 @@ function initTheme()
             'id' => 'sidebar',
         ));
     }
-
-    // lấy lượt view cao nhất
-    function setpostview($postID)
-    {
-        $count_key = 'views';
-        $count = get_post_meta($postID, $count_key, true);
-        if ($count == '') {
-            $count = 0;
-            delete_post_meta($postID, $count_key);
-            add_post_meta($postID, $count_key, '0');
-        } else {
-            $count++;
-            update_post_meta($postID, $count_key, $count);
-        }
-    }
-    function getpostviews($postID)
-    {
-        $count_key = 'views';
-        $count = get_post_meta($postID, $count_key, true);
-        if ($count == '') {
-            delete_post_meta($postID, $count_key);
-            add_post_meta($postID, $count_key, '0');
-            return "0";
-        }
-        return $count;
-    }
+  
 }
 add_action('init', 'initTheme');
 
@@ -107,3 +104,79 @@ function percentSale($price , $price_sale){
     return number_format($percent);
 }
 
+
+// rating
+function show_rating( $rating_html, $rating, $count ) {
+    $rating_html  = '<div class="star-rating">';
+    $rating_html .= wc_get_star_rating_html( $rating, $count );
+    $rating_html .= '</div>';
+
+    return $rating_html;
+};  
+add_filter( 'woocommerce_product_get_rating_html', 'show_rating', 100, 3 );
+
+
+
+// // Xuan Loi 
+// function my_login_redirect( $redirect_to, $request, $user ) {
+// 	global $user;
+// 	if ( isset( $user->roles ) && is_array( $user->roles ) ) {
+// 		//check for admins
+// 		if ( in_array( "administrator", $user->roles ) ) {
+// 			// redirect them to the default place
+// 			return "http://localhost/wordpress";
+// 		} else {
+// 			return home_url();
+// 		}
+// 	} else {
+// 		return $redirect_to;
+// 	}
+// }
+// add_filter( "login_redirect", "my_login_redirect", 10, 3 );
+// function redirect_login_page() {
+//     $login_page  = home_url( "http://localhost/wordpress/login/" );
+//     $page_viewed = basename($_SERVER["REQUEST_URI"]);  
+//     if( $page_viewed == "wp-login.php" && $_SERVER["REQUEST_METHOD"] == "GET") {
+//         wp_redirect($login_page);
+//         exit;
+//     }
+// }
+// add_action("init","redirect_login_page");
+
+// /* Kiểm tra lỗi đăng nhập */
+// function login_failed() {
+//     $login_page  = home_url("http://localhost/wordpress/login/" );
+//     wp_redirect( $login_page ."?login=failed" );
+//     exit;
+// }
+// add_action("wp_login_failed","login_failed" );  
+// function verify_username_password( $user, $username, $password ) {
+//     $login_page  = home_url("http://localhost/wordpress/login/" );
+//     if( $username == "" || $password == "" ) {
+//         wp_redirect( $login_page . "?login=empty" );
+//         exit;
+//     }
+// }
+// add_filter("authenticate","verify_username_password", 1, 3);
+
+
+// Hàm lấy tất cả sản phẩm
+function getAllProduct(){
+    $arg = array (
+        'status' => 'publish',
+        'numberposts' => 10 ,
+    );
+    $products = wc_get_products($arg);
+    return $products;
+}
+function getProductsByCategoriesID($CategoryId)
+{
+    $args = array(
+        'post_type' => 'product',
+        'category' => array('$category'),
+        'orderby' => 'name',
+        'numberpost' => 6,
+    );
+    $products = wc_get_products($args);
+    return $products;
+}
